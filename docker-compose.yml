@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+    php-fpm:
+        build: .
+        container_name: zad_php
+        volumes:
+            - .:/var/www/html
+
+    nginx:
+        image: nginx:stable-alpine
+        container_name: zad_nginx
+        volumes:
+            - .:/var/www/html
+            - ./docker/nginx/symfony.conf:/etc/nginx/conf.d/default.conf
+        ports:
+            - "8080:80"
+
