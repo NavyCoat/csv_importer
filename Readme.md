@@ -47,7 +47,7 @@ I would use the Symfony Console component for this. But I have 15 minutes left w
 # Second thoughts
 
 ## ProductDTO in ProductManagement
-Ont his phase of the project, where everything lives in monolith application, I'm able to easily update/change my model.
-Currently it's 1 to 1 with date just from the CSV file. But when I will learn more about the domain, and wanted changes
-i will be able to just modigy my code easily. There are no commands to maintain, events to "update", no stuff like this.
-Changes are easy to made.
+In this project phase, where everything lives in a monolith application, I can update/change my model easily.
+Currently, it's 1 to 1 with data from the CSV file.
+But when I will learn more about the domain and wanted changes, I will be able to modify my code easily. There are no commands to maintain or events to "update" because there is nothing like this.
+Changes are easy to make.
